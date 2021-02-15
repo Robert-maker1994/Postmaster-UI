@@ -21,8 +21,6 @@ const styles = makeStyles((theme) => ({
 function Home()  {
   const style = styles();
 
-  const 
-
 
   return (
     <div>
