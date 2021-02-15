@@ -1,6 +1,7 @@
 import {
   Button,
   Container,
+  FormControl,
   Grid,
   makeStyles,
   TextField,
@@ -44,9 +45,10 @@ function ContactForm() {
         }
       )
         .then((res) => {
-          setTimeout(() => {
-            window.location.replace("https://www.google.com/");
-          }, 2000);
+          console.log(res)
+          // setTimeout(() => {
+          //   window.location.replace("https://www.google.com/");
+          // }, 2000);
         })
         .catch((err) => console.log(err));
     } catch (error) {
@@ -60,14 +62,15 @@ function ContactForm() {
           Please don't hesitate to react out, we look forward to hearing from
           you.{" "}
         </Typography>
-        <form className={styles.root} onSubmit={handleSubmit(submitValue)}>
+        <form name="form" className={styles.root} onSubmit={handleSubmit(submitValue)}>
           <Grid item className={styles.input}>
+          <FormControl  >
             <TextField
               id="outlined-secondary"
               label="Name"
               variant="outlined"
               color="primary"
-              name="fullName"
+              name={fullName}
               ref={register({
                 required: true,
                 minLength: 3,
@@ -75,11 +78,13 @@ function ContactForm() {
               onChange={(e) => setFullName(e.target.value)}
             />
             {errors.fullName && <p className="error">This is required! </p>}
+            </FormControl>
           </Grid>
           <Grid item className={styles.input}>
             <TextField
               label="Email"
               variant="outlined"
+              name={email}
               color="primary"
               ref={register({
                 required: true,
@@ -87,24 +92,27 @@ function ContactForm() {
                   value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
                 },
               })}
-              id="email"
+            
               onChange={(e) => setemail(e.target.value)}
             />
             {errors.email && <p className="error">Please enter your email</p>}
           </Grid>
-          <Grid item>
+          <Grid item >
             <TextField
               className={styles.input}
               id="outlined-secondary"
               label="Message"
               variant="outlined"
               color="primary"
-              name="announcement"
+              
+
               onChange={(e) => setAnnouncement(e.target.value)}
               ref={register({
                 required: true,
                 minLength: 7,
               })}
+              name='announcement'
+
             />
             {errors.announcement && (
               <p className="error">Please enter your message</p>

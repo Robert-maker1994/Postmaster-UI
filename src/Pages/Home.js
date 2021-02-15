@@ -21,6 +21,8 @@ const styles = makeStyles((theme) => ({
 function Home()  {
   const style = styles();
 
+ 
+
 
   return (
     <div>
@@ -42,21 +44,21 @@ function Home()  {
           justify="center"
           alignItems="center" container >
           <Zoom in timeout={3000} color="primary">
-              <Grid item  >
+              <Grid item xs={6}  >
                 <Button component={Link} to={cook}  size='large' color="primary"  variant='contained'>
                   Cooking.
                 </Button>
               </Grid>
               </Zoom>
               <Zoom in timeout={3000} color="primary">
-              <Grid item >
+              <Grid item xs={5}>
                 <Button component={Link} to={featured}   size='large' variant='contained'  color="primary">
                   Featured.
                 </Button>
               </Grid>
               </Zoom>
               <Zoom in timeout={3000} color="primary">
-              <Grid item  >
+              <Grid item xs={5} >
                 <Button component={Link} to={book} size='large' variant='contained' color="primary">
                   Book.
                 </Button>

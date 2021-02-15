@@ -39,7 +39,7 @@ function About() {
         newsletter, I promise you will learn something new from it every month.
         </Typography>
         </Grid>
-        <ContactForm />
+        <ContactForm  />
         </Grid>    
 </Container>        
     )
