@@ -10,6 +10,7 @@
 
 # production
 /build
+/text.js
 
 # misc
 .DS_Store
