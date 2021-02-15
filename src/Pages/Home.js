@@ -14,15 +14,14 @@ import Blog from "./Blog";
 
 const styles = makeStyles((theme) => ({
   root: {
-    height: '60vh',
-    
-  }
+    height: '60vh',  
+  },
 }));
 
 function Home()  {
   const style = styles();
 
-
+  const 
 
 
   return (
@@ -40,26 +39,26 @@ function Home()  {
             </Typography>
           </Zoom>
         </Box>
-        <Container spacing={4}>
+        <Container spacing={5}>
           <Grid  direction="row"
           justify="center"
           alignItems="center" container >
           <Zoom in timeout={3000} color="primary">
-              <Grid item  xs={6}  >
+              <Grid item  >
                 <Button component={Link} to={cook}  size='large' color="primary"  variant='contained'>
                   Cooking.
                 </Button>
               </Grid>
               </Zoom>
               <Zoom in timeout={3000} color="primary">
-              <Grid item  xs={5}>
+              <Grid item >
                 <Button component={Link} to={featured}   size='large' variant='contained'  color="primary">
                   Featured.
                 </Button>
               </Grid>
               </Zoom>
               <Zoom in timeout={3000} color="primary">
-              <Grid item   xs={5}>
+              <Grid item  >
                 <Button component={Link} to={book} size='large' variant='contained' color="primary">
                   Book.
                 </Button>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { CircularProgress, Typography } from '@material-ui/core';
+import { CircularProgress, Typography, useMediaQuery } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -17,6 +17,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Loader() {
   const classes = useStyles();
+  const margin = useMediaQuery('(min-width:600px, margin: 100px )');
 
   return (
     <div className={classes.root}>
@@ -24,6 +25,7 @@ export default function Loader() {
       <CircularProgress disableShrink 
         thickness={3}  
         size={200}
+        {...margin}
       />
       <Typography variant='h2' color="primary">Loading</Typography>
       </div>
