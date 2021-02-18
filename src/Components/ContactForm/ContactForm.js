@@ -13,7 +13,7 @@ import {
 import { useForm } from "react-hook-form";
 
 
-const contactStyles = makeStyles((theme) => ({ 
+const useStyles = makeStyles((theme) => ({ 
     input: {
         margin: "10px 0",
     },
@@ -24,10 +24,10 @@ function ContactForm() {
   const [announcement, setAnnouncement] = useState("");
 
   const { register, errors, handleSubmit } = useForm();
-  const styles = contactStyles();
+  const styles = useStyles();
 
   const submitValue = async (data) => {
-   
+  
     try {
       data.fullName = fullName;
       data.email = email;
@@ -67,7 +67,7 @@ function ContactForm() {
           you.
         </Typography>
         </Grid>
-        <form name="form" className={styles.root} onSubmit={handleSubmit(submitValue)}>
+        <form name="form" className={styles.root}  onSubmit={handleSubmit(submitValue)}>
           <Grid item className={styles.input}>
           <FormControl  >
             <TextField

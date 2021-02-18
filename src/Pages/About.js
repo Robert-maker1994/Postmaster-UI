@@ -1,6 +1,5 @@
 import React from 'react';
 import { Container, Grid, Typography, makeStyles} from '@material-ui/core'
-import ContactForm from '../Components/ContactForm/ContactForm';
 
 
 
@@ -41,7 +40,6 @@ function About() {
         newsletter, I promise you will learn something new from it every month.
         </Typography>
         </Grid>
-         <ContactForm />
         </Grid>    
 </Container>        
     )
