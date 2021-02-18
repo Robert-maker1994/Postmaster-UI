@@ -10,9 +10,7 @@ const useStyles = makeStyles((theme) => ({
     },
     height: '100vh'
   },
-  loader: {
-      margin: "250px auto", 
-  }
+ 
 }));
 
 export default function Loader() {

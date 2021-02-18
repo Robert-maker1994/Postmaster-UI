@@ -152,7 +152,7 @@ export default function BurgarNav() {
                           <Divider />
                             <ListItem button component={Link} to={about}>
                               <ListItemText 
-                                primary="About"  
+                                primary="About us"  
                                 />
                             </ListItem>
                           <Divider />
