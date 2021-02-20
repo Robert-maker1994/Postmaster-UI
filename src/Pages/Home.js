@@ -8,7 +8,6 @@ import {
 } from "@material-ui/core";
 import React from "react";
 import { Link } from "react-router-dom";
-import Loader from "../Components/Loader/Loader";
 import { book, cook, featured } from "../Routing/Routing";
 import Blog from "./Blog";
 
