@@ -8,7 +8,6 @@ const BlogPost = (props) => {
   const post = useContext(PostContext);
   const [article, setArticle] = useState([]);
   const [, setPostId] = useState("");
-  // "start": "serve -s build",
 
   useEffect(() => {
     const postId = props.match.params.postId;
