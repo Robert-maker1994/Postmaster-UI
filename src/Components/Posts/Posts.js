@@ -30,9 +30,15 @@ const BlogPost = (props) => {
           </Typography>
         </div>
         <Box m={'auto'}>
+          <div>
           <Typography variant="subtitle1">{article.summary}</Typography>
+          </div>
+          <div>
           <Typography variant="subtitle1">{article.blogText}</Typography>
+          </div>
+          <div>
           <Typography variant="subtitle1">{article.text1}</Typography>
+          </div>
           <Typography variant="subtitle1">{article.text2}</Typography>
           <Typography variant="subtitle1">{article.text3}</Typography>
           <Typography variant="subtitle1">{article.text4}</Typography>
@@ -53,14 +59,6 @@ const BlogPost = (props) => {
           <Typography variant="subtitle1">{article.text19}</Typography>
           <Typography variant="subtitle1">{article.text20}</Typography>
           <Typography variant="subtitle1">{article.text21}</Typography>
-
-
-
-
-
-
-
-
         </Box>
       </Container>
     </div>
