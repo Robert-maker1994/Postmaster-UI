@@ -85,15 +85,15 @@ function Book() {
                         height="auto"
                         width="100%"
                         src={blogs.photo}
-                        title={blogs.blogTitle}
+                        title={blogs.title}
                       />
                     </CardMedia>
                     <CardContent>
                       <Typography gutterBottom variant="h5" component="h2">
-                        {blogs.blogTitle}
+                        {blogs.title}
                       </Typography>
                       <Typography variant="body2" component="p">
-                        {blogs.blogCategory}
+                        {blogs.category}
                       </Typography>
                     </CardContent>
                   </CardActionArea>

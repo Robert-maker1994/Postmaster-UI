@@ -54,11 +54,11 @@ function Blog(props) {
                       />
                     </CardMedia>
                     <CardContent>
-                      <Typography gutterBottom variant="h5" component="h2">
-                        {blogs.blogTitle}
+                      <Typography  variant="h5"   component="h2">
+                        {blogs.title}
                       </Typography>
                       <Typography variant="body2" component="p">
-                        {blogs.blogCategory}
+                        {blogs.category}
                       </Typography>
                     </CardContent>
                   </CardActionArea>

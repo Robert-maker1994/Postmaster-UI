@@ -36,8 +36,10 @@ const myTheme = createMuiTheme({
       },
     },
   },
-  MuiCard: {
-    root: {},
+  MuiGrid: {
+    root: {
+      
+    },
   },
 	MuiFormControl:{
     root: {

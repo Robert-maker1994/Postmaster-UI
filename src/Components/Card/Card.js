@@ -11,7 +11,7 @@ import {
   Typography,
 } from "@material-ui/core";
 
-//Images
+//Images "start": "serve -s build",
 
 
 const useStyles = makeStyles((theme) => ({
@@ -52,7 +52,7 @@ const CardProps = ({tags, index}) => {
               />
               <CardContent className={cardStyles.content}>
                 <Typography gutterBottom variant="h5" component="h2">
-           {tags.blogTitle}
+           {tags.title}
                 </Typography>
 
                 <CardContent />
